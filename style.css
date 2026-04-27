@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: #111;
+    color: white;
+    background-image: url("fn.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed; 
+}
+/* main */
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 87vh;
+    text-align: center;
+}
+#quote span{
+    color: #000;
+    padding: 5px 10px;
+    background-image: url("https://images.unsplash.com/photo-1565371767810-ef913a6c8315?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+}
+
+

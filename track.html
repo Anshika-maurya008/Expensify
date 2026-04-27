@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tstyle.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="root.css">
+    <link rel="icon" href="img/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <title>Expense Tracker</title>
+</head>
+
+<body>
+    <div id="navbar">
+        <div class="nav">
+            <div id="icon">
+                <div id="menu"><i class="ri-menu-2-line"></i></div>
+                <i class="ri-money-rupee-circle-line"></i>
+                <h2>Expensify</h2>
+            </div>
+            <div id="nlink">
+                <a href="#">About Us</a>
+                <a href="index.html">Home</a>
+                <a href="track.html">Expenses</a>
+                <a href="#">Contact us</a>
+            </div>
+            <div id="nav-right"></div>
+        </div>
+    </div>
+    <main>
+        <div id="top">
+            <div class="amt">
+                <h2 id="heading">Total Expenses</h2>
+                <div class="balance">
+                    ₹<span class="balance-amt">0</span>
+                </div>
+                <div class="description"></div>
+            </div>
+        </div>
+        <div class="stats">
+            <div class="money">
+                <div class="label">Total Spent</div>
+                <div class="units spent">₹0</div>
+                <div class="bottom" id="b1"></div>
+            </div>
+            <div class="money">
+                <div class="label" id="label-left">Budget Left</div>
+                <div class="units" id="left">₹0</div>
+                <div class="bottom" id="b2"></div>
+            </div>
+            <div class="money">
+                <div class="label">Transactions</div>
+                <div class="units" id="tranz">0</div>
+                <div class="bottom" id="b3"></div>
+            </div>
+        </div>
+        <div class="panels">
+            <div class="add-exp">
+                <div class="label">Add Expense</div>
+                <form action="">
+                    <div class="desc">
+                        <label for="desc">Description</label>
+                        <input type="text" id="desc" name="des" placeholder="What did you spend on?">
+                    </div>
+                    <div class="inputs">
+                        <div class="amt"><label for="amt">Amount (₹)</label>
+                            <input type="number" id="amt" name="amt">
+                        </div>
+                        <div class="category">
+                            <label for="type">Category</label>
+                            <select id="type" name="type">
+                                <option value="food">🍜 Food</option>
+                                <option value="transport">🚌 Transport</option>
+                                <option value="entertainment">🎮 Entertainment</option>
+                                <option value="shopping">🛍️ Shopping</option>
+                                <option value="health">💊 Health</option>
+                                <option value="rent">🏠 Rent</option>
+                                <option value="bills">⚡ Bills</option>
+                                <option value="other">📦 Other</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button id="a-exp-btn">+ Add Expense</button>
+                </form>
+                <div class="scale">
+                    <div class="label" id="scale-lb">
+                        <span>Monthly Budget</span>
+                        <span id="scale-budget">₹0</span>
+                    </div>
+                    <div class="set-b">
+                        <input type="number" name="budget" id="budget" placeholder="Set Budget (₹)">
+                        <button id="set-btn">Set</button>
+                    </div>
+                    <div id="progress-bar"></div>
+                    <div class="progress-stat">
+                        <div class="spent" id="p-spent"></div>
+                        <div id="bud-percent"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel">
+                <div class="p-title">
+                    <div class="cat-b">
+                        <button class="c-btns">All</button>
+                        <button class="c-btns">Food</button>
+                        <button class="c-btns">Transport</button>
+                        <button class="c-btns">Entertainment</button>
+                        <button class="c-btns">Shopping</button>
+                        <button class="c-btns">Health</button>
+                        <button class="c-btns">Rent</button>
+                        <button class="c-btns">Bills</button>
+                        <button class="c-btns">Others</button>
+                    </div>
+                    <div class="clr-all">
+                        <button id="clr-all">Clear All</button>
+                    </div>
+                </div>
+                <div class="c-cards"></div>
+            </div>
+        </div>
+    </main>
+    <script src="tScript.js"></script>
+    <script src="root.js"></script>
+</body>
+
+</html>

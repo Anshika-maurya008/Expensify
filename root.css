@@ -1,0 +1,18 @@
+:root {
+    --bg-dark: #0A0A0A;
+    --card-dark: #111111;
+    --border: #222222;
+    --card-light:#1a1a1a;
+
+    --primary: #d53e0f;
+    --secondary: #9B0F06;
+    --deep: #5E0006;
+    --danger:#ff0000;
+    --safe:#1d9e75;
+
+    --font: #888888;
+    --light: #EED9B9;
+    --soft-light: #F5E6CC;
+
+    --hover: #FF6B35;
+}
