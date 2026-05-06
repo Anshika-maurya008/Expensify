@@ -13,10 +13,4 @@ A dark-themed personal expense tracker built with vanilla HTML, CSS, and JavaScr
 HTML · CSS · JavaScript (Vanilla)
 
 ## Live Demo
-[View Live](https://YOUR_USERNAME.github.io/expensify/)
-
-## Screenshots
-<!-- Add a screenshot of your app here -->
-
-## Setup
-Just open `index.html` in a browser or use a local server (e.g. VS Code Live Server).
+[View Live](https://anshika-maurya008.github.io/Expensify/)
