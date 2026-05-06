@@ -102,7 +102,6 @@ select:focus {
 }
 .closemenu{
     width: 100%;
-    transition: 0.3s;
 }
 .sidebar .nlink a{
     width: 100%;
