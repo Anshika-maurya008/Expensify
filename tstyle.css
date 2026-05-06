@@ -308,6 +308,25 @@ form select {
     cursor: pointer;
 }
 
+@media(max-width:800px) {
+    .date {
+        padding: 2px 3px;
+        border-radius: 5px;
+        background-color: var(--card-light);
+    }
+
+    /* .stats {
+        margin: 5px 10px;
+        padding: 10px;
+    } */
+
+    .panels {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 0 24px 20px;
+    }
+}
+
 @media(max-width:720px) {
     .stats {
         grid-template-columns: 1fr 1fr;
@@ -318,23 +337,32 @@ form select {
     }
 }
 
-@media(max-width:800px) {
-    .date {
-        padding: 2px 3px;
-        border-radius: 5px;
-        background-color: var(--card-light);
+@media(max-width:490px) {
+
+    #top,
+    .money {
+        padding: 10px 20px;
     }
 
     .stats {
-        margin: 5px 10px;
-        padding: 10px;
+        padding: auto;
+        margin: 0px;
+    }
+
+    .stats {
+        grid-template-columns: 1fr;
+    }
+
+    .stats .money {
+        grid-column: span 2;
     }
 
     .panels {
-        display: grid;
-        grid-template-columns: 1fr;
-        padding: 0 24px 20px;
+        padding: 0px 10px;
     }
 
-
+    .add-exp,
+    .panel {
+        padding: 18px;
+    }
 }

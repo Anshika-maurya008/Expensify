@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <link rel="stylesheet" href="tstyle.css">
     <link rel="stylesheet" href="navbar.css">
     <link rel="stylesheet" href="root.css">
@@ -21,17 +21,28 @@
     <div id="navbar">
         <div class="nav">
             <div id="icon">
-                <div id="menu"><i class="ri-menu-2-line"></i></div>
                 <i class="ri-money-rupee-circle-line"></i>
                 <h2>Expensify</h2>
             </div>
-            <div id="nlink">
+            <div class="sidebar">
+                <div class="nlink">
+                    <div class="closemenu"><i class="ri-menu-2-line"></i></div>
+                    <a href="#">About Us</a>
+                    <a href="index.html">Home</a>
+                    <a href="track.html">Expenses</a>
+                    <a href="#">Contact us</a>
+                </div>
+            </div>
+            <div class="nlink" id="links">
                 <a href="#">About Us</a>
                 <a href="index.html">Home</a>
                 <a href="track.html">Expenses</a>
                 <a href="#">Contact us</a>
             </div>
-            <div id="nav-right"></div>
+            <div class="side" style="gap: 10px;">
+                <div id="nav-right"></div>
+                <div id="menu"><i class="ri-menu-3-line"></i></div>
+            </div>
         </div>
     </div>
     <main>

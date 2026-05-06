@@ -40,3 +40,14 @@ if (page.includes("track.html")) {
         </div>
     `;
 }
+
+const menu=document.querySelector("#menu");
+const sidebar=document.querySelector(".sidebar .nlink");
+const closemenu=document.querySelector(".closemenu");
+
+menu.addEventListener("click",function(){
+  sidebar.style.visibility = "visible";
+});
+closemenu.addEventListener("click",function(){
+  sidebar.style.visibility = "hidden";
+});
